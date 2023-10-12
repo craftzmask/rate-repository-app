@@ -8,8 +8,8 @@ import theme from '../theme';
 const styles = StyleSheet.create({
   container: {
     paddingTop: Constants.statusBarHeight,
-    paddingLeft: 20,
-    paddingBottom: 20,
+    paddingLeft: theme.container.padding,
+    paddingBottom: theme.container.padding,
     backgroundColor: theme.backgroundColors.appBar
   },
   textColor: {

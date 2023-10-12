@@ -18,6 +18,9 @@ const theme = {
     normal: '400',
     bold: '700'
   },
+  container: {
+    padding: 10
+  }
 };
 
 export default theme;

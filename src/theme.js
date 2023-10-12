@@ -17,7 +17,7 @@ const theme = {
     bold: '700'
   },
   container: {
-    padding: 10
+    padding: 20
   }
 };
 

@@ -18,6 +18,9 @@ const theme = {
   },
   container: {
     padding: 20
+  },
+  border: {
+    radius: 5
   }
 };
 

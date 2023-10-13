@@ -8,10 +8,14 @@ const styles = StyleSheet.create({
   textInput: {
     padding: 15,
     borderWidth: 1,
-    borderRadius: theme.border.radius
+    borderRadius: theme.border.radius,
+  },
+  errorTextInput: {
+    borderColor: theme.colors.danger
   },
   errorText: {
-    marginTop: 5
+    color: theme.colors.danger,
+    marginTop: -10
   }
 });
 
@@ -27,8 +31,9 @@ const FormikTextInput = ({ name, style, ...props }) => {
         value={Field.value}
         error={showError}
         style={[
-          styles.textInput, 
-          style
+          styles.textInput,
+          style,
+          showError && styles.errorTextInput
         ]}
         {...props}
       />
